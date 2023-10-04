@@ -1,0 +1,18 @@
+#corpo {
+    padding: 10px;
+}
+
+#header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#contrucao {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
