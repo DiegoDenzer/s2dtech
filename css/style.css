@@ -121,6 +121,13 @@ h6,
     text-align: center;
 }
 
+.logo {
+    background-image: url(../img/s2dTech_cropped.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 150px;
+    height: 250px;
+}
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
@@ -225,6 +232,15 @@ h6,
 }
 
 @media (max-width: 576px) {
+
+    .logo {
+        width: 150px;
+        height: 80px;
+    }
+
+
+
+
     .carousel-caption h5 {
         font-size: 14px;
         font-weight: 500 !important;
