@@ -62,24 +62,30 @@ h1,
 h2,
 .fw-bold {
     font-weight: 800 !important;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 h3,
 h4,
 .fw-semi-bold {
     font-weight: 700 !important;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 h5,
 h6,
 .fw-medium {
     font-weight: 600 !important;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
 /*** Button ***/
 .btn {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     transition: .5s;
 }
@@ -124,6 +130,7 @@ h6,
 .logo {
     background-image: url(../img/s2dTech_cropped.png);
     background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
     background-position: center;
     width: 150px;
     height: 250px;
@@ -131,7 +138,7 @@ h6,
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
@@ -223,6 +230,7 @@ h6,
 
 /*** Carousel ***/
 .carousel-caption {
+    font-family: 'Montserrat', sans-serif;
     top: 0;
     left: 0;
     right: 0;
@@ -242,11 +250,15 @@ h6,
 
 
     .carousel-caption h5 {
+        font-family: 'Montserrat', sans-serif;
+
         font-size: 14px;
         font-weight: 500 !important;
     }
 
     .carousel-caption h1 {
+        font-family: 'Montserrat', sans-serif;
+
         font-size: 30px;
         font-weight: 600 !important;
     }
@@ -266,6 +278,8 @@ h6,
 
 /*** Section Title ***/
 .section-title::before {
+    font-family: 'Montserrat', sans-serif;
+
     position: absolute;
     content: "";
     width: 150px;
@@ -277,16 +291,22 @@ h6,
 }
 
 .section-title.text-center::before {
+    font-family: 'Montserrat', sans-serif;
+
     left: 50%;
     margin-left: -75px;
 }
 
 .section-title.section-title-sm::before {
+    font-family: 'Montserrat', sans-serif;
+
     width: 90px;
     height: 3px;
 }
 
 .section-title::after {
+    font-family: 'Montserrat', sans-serif;
+
     position: absolute;
     content: "";
     width: 6px;
@@ -327,6 +347,8 @@ h6,
 
 /*** Service ***/
 .service-item {
+    font-family: 'Montserrat', sans-serif;
+
     position: relative;
     height: 300px;
     padding: 0 30px;
@@ -334,6 +356,8 @@ h6,
 }
 
 .service-item .service-icon {
+    font-family: 'Montserrat', sans-serif;
+
     margin-bottom: 30px;
     width: 60px;
     height: 60px;
@@ -346,10 +370,14 @@ h6,
 }
 
 .service-item .service-icon i {
+    font-family: 'Montserrat', sans-serif;
+
     transform: rotate(45deg);
 }
 
 .service-item a.btn {
+    font-family: 'Montserrat', sans-serif;
+
     position: absolute;
     width: 60px;
     bottom: -48px;
@@ -366,6 +394,8 @@ h6,
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
+    font-family: 'Montserrat', sans-serif;
+
     margin-top: 15px;
     display: flex;
     align-items: flex-end;
@@ -373,6 +403,8 @@ h6,
 }
 
 .testimonial-carousel .owl-dot {
+    font-family: 'Montserrat', sans-serif;
+
     position: relative;
     display: inline-block;
     margin: 0 5px;
@@ -384,11 +416,15 @@ h6,
 }
 
 .testimonial-carousel .owl-dot.active {
+    font-family: 'Montserrat', sans-serif;
+
     width: 30px;
     background: var(--primary);
 }
 
 .testimonial-carousel .owl-item.center {
+    font-family: 'Montserrat', sans-serif;
+
     position: relative;
     z-index: 1;
 }
@@ -398,6 +434,8 @@ h6,
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
+    font-family: 'Montserrat', sans-serif;
+
     background: #FFFFFF !important;
     box-shadow: 0 0 30px #DDDDDD;
 }
@@ -409,6 +447,8 @@ h6,
 }
 
 .team-social {
+    font-family: 'Montserrat', sans-serif;
+
     position: absolute;
     width: 100%;
     height: 100%;
