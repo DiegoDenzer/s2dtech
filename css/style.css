@@ -128,13 +128,13 @@ h6,
 }
 
 .logo {
-    background-image: url(../img/s2dTech_cropped.png);
     background-repeat: no-repeat;
-    font-family: 'Montserrat', sans-serif;
-    background-position: center;
-    width: 150px;
-    height: 250px;
+    background-position: left;
+    width: 370px;
+    height: 70px;
 }
+
+
 
 /*** Navbar ***/
 .navbar-dark .navbar-nav .nav-link {
@@ -242,12 +242,9 @@ h6,
 @media (max-width: 576px) {
 
     .logo {
-        width: 150px;
+        width: 268px;
         height: 80px;
     }
-
-
-
 
     .carousel-caption h5 {
         font-family: 'Montserrat', sans-serif;
