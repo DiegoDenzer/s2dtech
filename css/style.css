@@ -356,7 +356,6 @@ h6,
 }
 
 .service-item .service-icon {
-    font-family: 'Montserrat', sans-serif;
 
     margin-bottom: 30px;
     width: 60px;
@@ -370,7 +369,6 @@ h6,
 }
 
 .service-item .service-icon i {
-    font-family: 'Montserrat', sans-serif;
 
     transform: rotate(45deg);
 }
