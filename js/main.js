@@ -122,5 +122,10 @@
         }
     });
     
+    // Import translations.js
+    const script = document.createElement('script');
+    script.src = 'js/translations.js';
+    document.head.appendChild(script);
+    
 })(jQuery);
 
