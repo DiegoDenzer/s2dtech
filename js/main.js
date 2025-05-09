@@ -127,5 +127,19 @@
     script.src = 'js/translations.js';
     document.head.appendChild(script);
     
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', (event) => {
+            const lang = event.target.getAttribute('data-lang');
+            if (!lang) {
+                const parent = event.target.closest('[data-lang]');
+                if (parent) {
+                    setLanguage(parent.getAttribute('data-lang'));
+                }
+            } else {
+                setLanguage(lang);
+            }
+        });
+    });
+    
 })(jQuery);
 
