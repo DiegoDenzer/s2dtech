@@ -69,9 +69,10 @@
                         Idioma
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <li><a class="dropdown-item" href="#" data-lang="pt-br" onclick="setLanguage('pt-br')"><span class="flag-icon flag-icon-br"></span> Português</a></li>
-                        <li><a class="dropdown-item" href="#" data-lang="es" onclick="setLanguage('es')"><span class="flag-icon flag-icon-es"></span> Español</a></li>
-                        <li><a class="dropdown-item" href="#" data-lang="en" onclick="setLanguage('en')"><span class="flag-icon flag-icon-us"></span> English</a></li>
+    <!-- Certifique-se de que os itens chamam a função setLanguage corretamente -->
+                        <li><a class="dropdown-item" href="#" data-lang="pt-br" onclick="setLanguage('pt-br');"><span class="flag-icon flag-icon-br"></span> Português</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="es" onclick="setLanguage('es');"><span class="flag-icon flag-icon-es"></span> Español</a></li>
+                        <li><a class="dropdown-item" href="#" data-lang="en" onclick="setLanguage('en');"><span class="flag-icon flag-icon-us"></span> English</a></li>
                     </ul>
                 </div>
             </div>
@@ -435,7 +436,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
