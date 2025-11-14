@@ -1,21 +1,158 @@
-import translations from './translations.json';
+// Translations data
+const translations = {
+    "pt-br": {
+        "home": "Home",
+        "about": "Sobre nós",
+        "services": "Serviços",
+        "members": "Membros",
+        "contact": "Contato",
+        "carousel1-title": "Impulsionando o futuro da tecnologia",
+        "carousel1-subtitle": "linha de código por linha de código",
+        "carousel2-title": "Cultivando inovação",
+        "carousel2-subtitle": "através de consultoria especializada.",
+        "about-title": "Sobre nós",
+        "about-description": "Somos uma equipe de especialistas em desenvolvimento de software, apaixonados por criar soluções inovadoras e eficientes usando a linguagem de programação Java. Com anos de experiência e um histórico comprovado de projetos bem-sucedidos, estamos comprometidos em ajudar nossos clientes a atingir seus objetivos de negócios por meio de tecnologia de ponta.",
+        "why-choose-us-title": "Por que nos escolher",
+        "why-choose-us-subtitle": "Somos apaixonados pelo que fazemos",
+        "best-for-business": "O melhor para a sua Empresa",
+        "best-for-business-description": "Entendemos que cada indústria e cada empresa têm suas próprias necessidades e desafios únicos. Por isso, oferecemos soluções personalizadas que se adaptam perfeitamente às suas necessidades específicas.",
+        "professional-team": "Equipe Profissional",
+        "professional-team-description": "Ao escolher nossa empresa de tecnologia, você está escolhendo um parceiro comprometido em impulsionar o sucesso da sua empresa através de soluções tecnológicas avançadas, seguras e personalizadas.",
+        "services-title": "Serviços",
+        "services-subtitle": "Soluções de TI Personalizadas para o Sucesso do Seu Negócio",
+        "web-development": "Desenvolvimento Web",
+        "web-development-description": "Desenvolvimento de softwares empresariais de alta performance e segurança",
+        "mobile-development": "Desenvolvimento Mobile",
+        "mobile-development-description": "Desenvolvimento de aplicativos para plataformas IOS e Android.",
+        "design-branding": "Design e Branding",
+        "design-branding-description": "Desenvolvemos a identidade do seu negócio",
+        "members-title": "Membros",
+        "members-subtitle": "Profissionais prontos para ajudar seu negócio",
+        "member1-name": "Diego Denzer",
+        "member1-role": "Arquiteto de Software",
+        "member2-name": "Tessa Portuguez Racua",
+        "member2-role": "Design e Branding",
+        "member3-name": "Wallicen Dalazuana",
+        "member3-role": "Arquiteto de Software",
+        "contact-title": "Entre em contato",
+        "contact-subtitle": "Conosco",
+        "contact-email": "Seu e-mail é importante para nós",
+        "contact-call": "Ligue para dúvidas",
+        "contact-phone": "+55 41 99728-9086",
+        "footer-about": "Somos uma empresa de tecnologia dedicada a transformar ideias em soluções inovadoras. Nossa equipe de especialistas está pronta para ajudar você a alcançar seus objetivos com tecnologia de ponta e serviços personalizados.",
+        "footer-contact": "Contatos",
+        "footer-address": "Curitiba, Paraná, Brasil",
+        "footer-phone": "+55 41 9 9728-9086",
+        "footer-sitemap": "Mapa do site",
+        "footer-popular-links": "Links Populares"
+    },
+    "es": {
+        "home": "Inicio",
+        "about": "Sobre nosotros",
+        "services": "Servicios",
+        "members": "Miembros",
+        "contact": "Contacto",
+        "carousel1-title": "Impulsando el futuro de la tecnología",
+        "carousel1-subtitle": "línea de código por línea de código",
+        "carousel2-title": "Cultivando innovación",
+        "carousel2-subtitle": "a través de consultoría especializada.",
+        "about-title": "Sobre nosotros",
+        "about-description": "Somos un equipo de especialistas en desarrollo de software, apasionados por crear soluciones innovadoras y eficientes utilizando el lenguaje de programación Java. Con años de experiencia y un historial comprobado de proyectos exitosos, estamos comprometidos a ayudar a nuestros clientes a alcanzar sus objetivos comerciales a través de tecnología de punta.",
+        "why-choose-us-title": "Por qué elegirnos",
+        "why-choose-us-subtitle": "Nos apasiona lo que hacemos",
+        "best-for-business": "Lo mejor para su empresa",
+        "best-for-business-description": "Entendemos que cada industria y cada empresa tienen sus propias necesidades y desafíos únicos. Por eso, ofrecemos soluciones personalizadas que se adaptan perfectamente a sus necesidades específicas.",
+        "professional-team": "Equipo profesional",
+        "professional-team-description": "Al elegir nuestra empresa de tecnología, está eligiendo un socio comprometido a impulsar el éxito de su empresa a través de soluciones tecnológicas avanzadas, seguras y personalizadas.",
+        "services-title": "Servicios",
+        "services-subtitle": "Soluciones de TI personalizadas para el éxito de su negocio",
+        "web-development": "Desarrollo web",
+        "web-development-description": "Desarrollo de software empresarial de alto rendimiento y seguridad",
+        "mobile-development": "Desarrollo móvil",
+        "mobile-development-description": "Desarrollo de aplicaciones para plataformas IOS y Android.",
+        "design-branding": "Diseño y Branding",
+        "design-branding-description": "Desarrollamos la identidad de su negocio",
+        "members-title": "Miembros",
+        "members-subtitle": "Profesionales listos para ayudar a su negocio",
+        "member1-name": "Diego Denzer",
+        "member1-role": "Arquitecto de Software",
+        "member2-name": "Tessa Portuguez Racua",
+        "member2-role": "Diseño y Branding",
+        "member3-name": "Wallicen Dalazuana",
+        "member3-role": "Arquitecto de Software",
+        "contact-title": "Póngase en contacto",
+        "contact-subtitle": "Con nosotros",
+        "contact-email": "Su correo electrónico es importante para nosotros",
+        "contact-call": "Llame para consultas",
+        "contact-phone": "+55 41 99728-9086",
+        "footer-about": "Somos una empresa de tecnología dedicada a transformar ideas en soluciones innovadoras. Nuestro equipo de expertos está listo para ayudarlo a alcanzar sus objetivos con tecnología de punta y servicios personalizados.",
+        "footer-contact": "Contactos",
+        "footer-address": "Curitiba, Paraná, Brasil",
+        "footer-phone": "+55 41 9 9728-9086",
+        "footer-sitemap": "Mapa del sitio",
+        "footer-popular-links": "Enlaces Populares"
+    },
+    "en": {
+        "home": "Home",
+        "about": "About us",
+        "services": "Services",
+        "members": "Members",
+        "contact": "Contact",
+        "carousel1-title": "Driving the future of technology",
+        "carousel1-subtitle": "line by line of code",
+        "carousel2-title": "Cultivating innovation",
+        "carousel2-subtitle": "through specialized consulting.",
+        "about-title": "About us",
+        "about-description": "We are a team of software development specialists, passionate about creating innovative and efficient solutions using the Java programming language. With years of experience and a proven track record of successful projects, we are committed to helping our clients achieve their business goals through cutting-edge technology.",
+        "why-choose-us-title": "Why choose us",
+        "why-choose-us-subtitle": "We are passionate about what we do",
+        "best-for-business": "The best for your business",
+        "best-for-business-description": "We understand that every industry and every company has its own unique needs and challenges. That's why we offer customized solutions that perfectly adapt to your specific needs.",
+        "professional-team": "Professional Team",
+        "professional-team-description": "By choosing our technology company, you are choosing a partner committed to driving your company's success through advanced, secure, and customized technological solutions.",
+        "services-title": "Services",
+        "services-subtitle": "Customized IT Solutions for Your Business Success",
+        "web-development": "Web Development",
+        "web-development-description": "Development of high-performance and secure enterprise software",
+        "mobile-development": "Mobile Development",
+        "mobile-development-description": "Development of applications for IOS and Android platforms.",
+        "design-branding": "Design and Branding",
+        "design-branding-description": "We develop your business identity",
+        "members-title": "Members",
+        "members-subtitle": "Professionals ready to help your business",
+        "member1-name": "Diego Denzer",
+        "member1-role": "Software Architect",
+        "member2-name": "Tessa Portuguez Racua",
+        "member2-role": "Design and Branding",
+        "member3-name": "Wallicen Dalazuana",
+        "member3-role": "Software Architect",
+        "contact-title": "Get in touch",
+        "contact-subtitle": "With us",
+        "contact-email": "Your email is important to us",
+        "contact-call": "Call for inquiries",
+        "contact-phone": "+55 41 99728-9086",
+        "footer-about": "We are a technology company dedicated to transforming ideas into innovative solutions. Our team of experts is ready to help you achieve your goals with cutting-edge technology and personalized services.",
+        "footer-contact": "Contact",
+        "footer-address": "Curitiba, Paraná, Brazil",
+        "footer-phone": "+55 41 9 9728-9086",
+        "footer-sitemap": "Site Map",
+        "footer-popular-links": "Popular Links"
+    }
+};
 
-export function setLanguage(lang) {
+// Function to change language
+function setLanguage(lang) {
     console.log(`Changing language to: ${lang}`);
     const elements = document.querySelectorAll("[data-translate]");
     elements.forEach(el => {
         const key = el.getAttribute("data-translate");
         if (translations[lang] && translations[lang][key]) {
-        el.textContent = translations[lang][key];
-    } else {
-        console.warn(`Translation missing for key: ${key} in language: ${lang}`);
-    }
+            el.textContent = translations[lang][key];
+        } else {
+            console.warn(`Translation missing for key: ${key} in language: ${lang}`);
+        }
     });
 }
 
-document.querySelectorAll(".language-flag").forEach(flag => {
-    flag.addEventListener("click", () => {
-        const lang = flag.getAttribute("data-lang");
-        setLanguage(lang);
-    });
-});
+// Make setLanguage globally accessible
+window.setLanguage = setLanguage;
