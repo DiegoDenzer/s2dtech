@@ -1,5 +1,3 @@
-import { setLanguage } from './translations.js';
-
 (function ($) {
     "use strict";
     
@@ -112,29 +110,6 @@ import { setLanguage } from './translations.js';
                 items:8
             }
         }
-    });
-    
-    import { setLanguage } from './translations.js';
-    const script = document.createElement('script');
-    script.src = 'js/translations.js';
-    document.head.appendChild(script);
-    
-    // Adiciona eventos de clique para troca de idioma
-document.querySelectorAll('.dropdown-item').forEach(item => {
-        item.addEventListener('click', (event) => {
-            const lang = event.target.getAttribute('data-lang') || event.target.closest('[data-lang]').getAttribute('data-lang');
-            if (!lang) {
-    // Verifica se o elemento pai possui o atributo data-lang
-                const parent = event.target.closest('[data-lang]');
-                if (parent) {
-                    setLanguage(parent.getAttribute('data-lang'));
-    // Chama a função setLanguage com o idioma correto
-                }
-            } else {
-                console.log(`Language selected: ${lang}`);
-            setLanguage(lang);
-            }
-        });
     });
     
 })(jQuery);
