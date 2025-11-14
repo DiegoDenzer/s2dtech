@@ -1,17 +1,27 @@
 import { setLanguage } from './translations.js';
 
+// Spinner - Remove on page load (vanilla JS for reliability)
+(function() {
+    const removeSpinner = function() {
+        const spinner = document.getElementById('spinner');
+        if (spinner) {
+            spinner.classList.remove('show');
+        }
+    };
+    
+    // Remove spinner when page is fully loaded
+    if (document.readyState === 'complete') {
+        removeSpinner();
+    } else {
+        window.addEventListener('load', removeSpinner);
+    }
+    
+    // Fallback: remove spinner after maximum wait time (3 seconds)
+    setTimeout(removeSpinner, 3000);
+})();
+
 (function ($) {
     "use strict";
-
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
     
     
     // Initiate the wowjs
